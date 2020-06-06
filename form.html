@@ -2,26 +2,77 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Register Now</title>
-      <link rel="stylesheet" href="header.css">
+    <title> Yashoda Tele Health Services</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <link rel="stylesheet" href="header.css">
   </head>
   <body>
-    <header>
 
-    <h1> Yashoda Tele Health Services </h1>
-    <a href="homepage.html">    <img src="logo.png" alt="Low bandwith">                     </a>
-    <table border="3">
-      <thead>
-      <th> <a href="homepage.html"><img src="homeicon.png" alt="Low bandwith"></a> </th>
-        <th><a href="https://www.yashodahospitals.com/about-us/overview/">About Us</a></th>
-        <th><a href="https://www.yashodahospitals.com/event/">News</a></th>
-        <th><a href="https://www.yashodahospitals.com/specialities/">Specialities</a></th>
-        <th><a href="https://www.yashodahospitals.com/patient-care/">Patient Info</a></th>
-        <th><a href="https://www.yashodahospitals.com/blog/">Blog</a></th>
-      </thead>
-    </table>
-      </header>
-    <h1>Form</h1>
+    <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+       <span class="sr-only">Toggle navigation</span>
+       <span class="icon-bar"></span>
+       <span class="icon-bar"></span>
+       <span class="icon-bar"></span>
+     </button>
+      <a class="navbar-brand" href="https://www.yashodahospitals.com/">
+        Yashoda Tele Health Services
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav nav-tabs navbar-right">
+        <li role="presentation" class="active"><a href="#">About Us</a></li>
+        <li role="presentation"><a href="#">News</a></li>
+        <li role="presentation"><a href="#">Specialities</a></li>
+        <li role="presentation"><a href="#">Patient Info</a></li>
+        <li role="presentation"><a href="#">Blog</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li role="presentation" class="active"><a href="#">About Us</a></li>
+            <li role="presentation"><a href="#">News</a></li>
+            <li role="presentation"><a href="#">Specialities</a></li>
+            <li role="presentation"><a href="#">Patient Info</a></li>
+            <li role="presentation"><a href="#">Blog</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+</nav>
+<div class="container">
+
+
+<div class="jumbotron">
+  <h1>Register Now</h1>
+  <p>Enter your details</p>
+  <form class="form-group">
+    <label for="name">Name:</label>
+    <input id="name" type="text" name="Name"required ><br><br>
+    <label for="email">Email ID:</label>
+    <input id="email "type="email" name="Email"required><br><br>
+    <label for="contact">Phone Number:</label>
+    <input id="contact" type="number" name="Phone number"required ><br><br>
+    <label for="service">Service required:</label>
+    <input id="service"type="text" name="Service required"required><br><br>
+    <div class="checkbox">
+      <label for="usercheck">
+        <input type="checkbox" name="checkbox" value="">Keep me logged In</label>
+
+
+    </div>
+
+  </form>
+  <p><a class="btn btn-primary btn-lg" href="#" role="button">Submit</a></p>
+</div>
+</div>
+
+    <!-- <h1>Form</h1>
     <form>
       <label for="name">Name:</label>
       <input id="name" type="text" name="Name"required><br><br>
@@ -32,6 +83,6 @@
       <label for="service">Service required:</label>
       <input id="service"type="text" name="Service required"required><br><br>
       <input type="submit" value="Submit">
-    </form>
+    </form> -->
   </body>
 </html>
